@@ -1,0 +1,9 @@
+diff command generates the difference between two files.
+diff -u is used to compae two files line by line.
+
+diff -u old_fileName new_fileName > change.diff
+
+patch command applies differences to the original file.
+To automatically apply changes to a file, run the patch cmd on the file that needs to be modified with the diff file as input.
+
+patch original_fileName < diff_fileName
