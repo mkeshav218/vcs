@@ -1,0 +1,28 @@
+git config --global user.email "email"
+git config --global user.name "userName"
+
+The git directory acts as a database for all the changes tracked in git and the Working tree acts as a sandbox where we can edit the current versions of the file.
+
+Git Project consists of 3 sections:
+1)Git directory
+2)Staging Area
+3)Working Tree
+
+1)Git Directory :- Contains the history of all files & the changes.
+2)Staging Area :- also known as the index, is a file maintained by git that contains all the information about what files and changes are 			  going to go into your next commit.
+3)Working Tree :- Contains the current state of the project.
+
+*) add command :- add the current changes to the list of changes that are to be commited.
+              i.e. moves the current changes to the staging area.
+             
+*) git add . :- Moves all untracked files to the staging area.
+              
+*) commit command :- Creates a snapshot of the files present in staging area & stores them in the database that lives in the git directory.
+
+*) git commit -m "message"
+
+*) git config -l :- Shows basic info like userName, email.
+
+*) git log :- Displays commit messages.
+
+*) git push --set-upstream origin development
