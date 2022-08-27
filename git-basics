@@ -3,6 +3,8 @@ git config --global user.name "userName"
 
 The git directory acts as a database for all the changes tracked in git and the Working tree acts as a sandbox where we can edit the current versions of the file.
 
+Head is the current checked out snapshot.
+
 Git Project consists of 3 sections:
 1)Git directory
 2)Staging Area
@@ -26,3 +28,12 @@ Git Project consists of 3 sections:
 *) git log :- Displays commit messages.
 
 *) git push --set-upstream origin development
+
+*) git checkout fileName //revert changes to modified unstaged file before they are staged. i.e : Restore the unstaged file to its earlier 			staged version
+
+*) git reset HEAD fileName //move file from staged area to unstaged area
+
+*) git revert HEAD // creates a new commit with inverse changes
+               i.e It doesn't mean undo. Instead, It creates a commit that contains the inverse of all changes made in bad commit in order 
+                   to cancel them out.
+
